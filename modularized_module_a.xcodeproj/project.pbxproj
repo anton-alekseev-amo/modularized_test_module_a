@@ -9,12 +9,39 @@
 /* Begin PBXBuildFile section */
 		698749E329696C5C00AA3DD0 /* ModuleAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999A4BC29696A900069C4B7 /* ModuleAViewController.swift */; };
 		698749E429696C5F00AA3DD0 /* ModuleATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999A4BD29696A900069C4B7 /* ModuleATableViewCell.swift */; };
+		69874A472969BE3700AA3DD0 /* modularized_shared_module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69874A462969BE2F00AA3DD0 /* modularized_shared_module.framework */; };
+		69874A482969BE3700AA3DD0 /* modularized_shared_module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69874A462969BE2F00AA3DD0 /* modularized_shared_module.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6999A4B129696A010069C4B7 /* modularized_module_a.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6999A4B029696A010069C4B7 /* modularized_module_a.docc */; };
 		6999A4B229696A010069C4B7 /* modularized_module_a.h in Headers */ = {isa = PBXBuildFile; fileRef = 6999A4AF29696A010069C4B7 /* modularized_module_a.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB1D8074112E2CD9EBCC10D2 /* Pods_modularized_module_a.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED122A6846D9B212A8341CDF /* Pods_modularized_module_a.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		69874A452969BE2F00AA3DD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69874A412969BE2F00AA3DD0 /* modularized_shared_module.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 69874A332969BC9900AA3DD0;
+			remoteInfo = modularized_shared_module;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		69874A492969BE3700AA3DD0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				69874A482969BE3700AA3DD0 /* modularized_shared_module.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		69874A412969BE2F00AA3DD0 /* modularized_shared_module.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = modularized_shared_module.xcodeproj; path = ../../modularized_shared_module/modularized_shared_module.xcodeproj; sourceTree = "<group>"; };
 		6999A4AC29696A010069C4B7 /* modularized_module_a.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = modularized_module_a.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6999A4AF29696A010069C4B7 /* modularized_module_a.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modularized_module_a.h; sourceTree = "<group>"; };
 		6999A4B029696A010069C4B7 /* modularized_module_a.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = modularized_module_a.docc; sourceTree = "<group>"; };
@@ -30,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69874A472969BE3700AA3DD0 /* modularized_shared_module.framework in Frameworks */,
 				CB1D8074112E2CD9EBCC10D2 /* Pods_modularized_module_a.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +73,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		69874A402969BE1E00AA3DD0 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				69874A412969BE2F00AA3DD0 /* modularized_shared_module.xcodeproj */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		69874A422969BE2F00AA3DD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69874A462969BE2F00AA3DD0 /* modularized_shared_module.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6999A4A229696A010069C4B7 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +96,7 @@
 				6999A4AD29696A010069C4B7 /* Products */,
 				9D1F974134F255A53B58D3E6 /* Pods */,
 				22C92FD76B76B8B78462D854 /* Frameworks */,
+				69874A402969BE1E00AA3DD0 /* Projects */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +160,7 @@
 				6999A4A829696A010069C4B7 /* Sources */,
 				6999A4A929696A010069C4B7 /* Frameworks */,
 				6999A4AA29696A010069C4B7 /* Resources */,
+				69874A492969BE3700AA3DD0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,12 +196,28 @@
 			mainGroup = 6999A4A229696A010069C4B7;
 			productRefGroup = 6999A4AD29696A010069C4B7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 69874A422969BE2F00AA3DD0 /* Products */;
+					ProjectRef = 69874A412969BE2F00AA3DD0 /* modularized_shared_module.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6999A4AB29696A010069C4B7 /* modularized_module_a */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		69874A462969BE2F00AA3DD0 /* modularized_shared_module.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = modularized_shared_module.framework;
+			remoteRef = 69874A452969BE2F00AA3DD0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6999A4AA29696A010069C4B7 /* Resources */ = {
