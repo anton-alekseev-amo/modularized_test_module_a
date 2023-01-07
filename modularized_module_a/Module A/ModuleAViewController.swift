@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 public protocol ModuleAViewControllerDelegate: AnyObject {
     func moduleADidSelectItem(with ID: UUID)
@@ -47,17 +48,13 @@ public class ModuleAViewController: UIViewController {
     
     func configureTableView() {
         self.view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(ModuleATableViewCell.self, forCellReuseIdentifier: ModuleATableViewCell.reuseIdentifier)
         
-        NSLayoutConstraint.activate([
-            tableView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor),
-            tableView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
-        ])
+        tableView.snp.makeConstraints { make in
+            make.left.top.right.bottom.equalToSuperview()
+        }
     }
 
 }
