@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		698749E329696C5C00AA3DD0 /* ModuleAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999A4BC29696A900069C4B7 /* ModuleAViewController.swift */; };
-		698749E429696C5F00AA3DD0 /* ModuleATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6999A4BD29696A900069C4B7 /* ModuleATableViewCell.swift */; };
 		69874A472969BE3700AA3DD0 /* modularized_shared_module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69874A462969BE2F00AA3DD0 /* modularized_shared_module.framework */; };
 		69874A482969BE3700AA3DD0 /* modularized_shared_module.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69874A462969BE2F00AA3DD0 /* modularized_shared_module.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6999A4B129696A010069C4B7 /* modularized_module_a.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6999A4B029696A010069C4B7 /* modularized_module_a.docc */; };
@@ -46,7 +45,6 @@
 		6999A4AF29696A010069C4B7 /* modularized_module_a.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modularized_module_a.h; sourceTree = "<group>"; };
 		6999A4B029696A010069C4B7 /* modularized_module_a.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = modularized_module_a.docc; sourceTree = "<group>"; };
 		6999A4BC29696A900069C4B7 /* ModuleAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAViewController.swift; sourceTree = "<group>"; };
-		6999A4BD29696A900069C4B7 /* ModuleATableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleATableViewCell.swift; sourceTree = "<group>"; };
 		A6CC9E2D60FF8996F877F64A /* Pods-modularized_module_a.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modularized_module_a.release.xcconfig"; path = "Target Support Files/Pods-modularized_module_a/Pods-modularized_module_a.release.xcconfig"; sourceTree = "<group>"; };
 		BF0BB23B5F6DCDF6D0769F70 /* Pods-modularized_module_a.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modularized_module_a.debug.xcconfig"; path = "Target Support Files/Pods-modularized_module_a/Pods-modularized_module_a.debug.xcconfig"; sourceTree = "<group>"; };
 		ED122A6846D9B212A8341CDF /* Pods_modularized_module_a.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_modularized_module_a.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				6999A4BC29696A900069C4B7 /* ModuleAViewController.swift */,
-				6999A4BD29696A900069C4B7 /* ModuleATableViewCell.swift */,
 			);
 			path = "Module A";
 			sourceTree = "<group>";
@@ -259,7 +256,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				698749E429696C5F00AA3DD0 /* ModuleATableViewCell.swift in Sources */,
 				698749E329696C5C00AA3DD0 /* ModuleAViewController.swift in Sources */,
 				6999A4B129696A010069C4B7 /* modularized_module_a.docc in Sources */,
 			);
